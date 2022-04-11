@@ -7,3 +7,7 @@ appVersion: [[ .AppVersion ]]
 annotations:
   application.giantswarm.io/team: "sa"
   config.giantswarm.io/version: 1.x.x
+dependencies:
+- name: netdata
+  version: "3.7.14"
+  repository: "https://github.com/netdata/helmchart"
