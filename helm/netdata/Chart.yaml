@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 name: netdata
 description: Tool to install monitoring agents in nodes.
 home: https://github.com/giantswarm/netdata
