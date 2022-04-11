@@ -1,0 +1,28 @@
+netdata:
+  ingress:
+    enabled: false
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: "true"
+    path: /
+    pathType: Prefix
+    hosts:
+      - netdata.xxx.k8s.inst.eu-west-1.aws.gigantic.io
+    tls:
+      - hosts:
+        - netdata.xxx.k8s.inst.eu-west-1.aws.gigantic.io
+        secretName: netdatatls
+
+  parent:
+    claiming:
+      enabled: false
+      token: "xxxx"
+      rooms: "xxxx"
+      url: "https://app.netdata.cloud"
+
+  child:
+    claiming:
+      enabled: false
+      token: "xxxx"
+      rooms: "xxxx"
+      url: "https://app.netdata.cloud"
